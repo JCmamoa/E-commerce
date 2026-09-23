@@ -1,0 +1,14 @@
+# Java
+app_build/bin/
+*.class
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Agents
+.agents/

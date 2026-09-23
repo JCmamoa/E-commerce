@@ -1,0 +1,23 @@
+# STATUS DO PROJETO — E-Commerce Java + React
+# Data: 23/09/2026 18:43
+# Status: CÓDIGO COMPLETO, COMPILADO E TESTADO COM SUCESSO
+
+## RESUMO
+Todo o código foi implementado e está funcional em app_build/.
+O servidor foi compilado com sucesso (javac 21) e testado via curl.
+A API REST retorna 12 produtos, processa carrinho e cria pedidos.
+O frontend React SPA está servido em http://localhost:8080.
+
+## COMO EXECUTAR
+cd "c:\Users\Casa\OneDrive\Área de Trabalho\E-commerce\app_build"
+$javac = "C:\Users\Casa\.jdk\jdk-21.0.6+7\bin\javac.exe"
+$java  = "C:\Users\Casa\.jdk\jdk-21.0.6+7\bin\java.exe"
+$files = Get-ChildItem -Path src/main/java -Filter *.java -Recurse | ForEach-Object FullName
+& $javac -encoding UTF-8 -d bin $files
+& $java -cp bin com.ecommerce.Main 8080
+
+## OU SIMPLESMENTE:
+powershell -ExecutionPolicy Bypass -File run.ps1
+
+## ABRA NO NAVEGADOR:
+http://localhost:8080
